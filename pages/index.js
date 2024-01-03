@@ -1,11 +1,23 @@
 import React from 'react';
+import getUser from '../utils/getUser';
 
-const Index = () => {
+const Index = ({user}) => {
     return (
-        <div>
-            <h1>Hello World</h1>
+        <div className='container mx-auto'>
+            <h2 className="font-bold text-5xl">Olá! Eu sou Joir Neto</h2>
+            <h2 className="font-bold text-3xl">Meu github</h2>
+            <p>Github stats - public repos: {user.public_repos} / followers: {user.followers}</p>
         </div>
     )
+}
+
+export async function getServerSideProps(context) {
+    const {user} = await getUser('joirneto');
+    return {
+        props: {
+            user,
+        }
+    }
 }
 
 export default Index;
