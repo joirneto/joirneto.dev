@@ -6,6 +6,7 @@ const Index = ({repos, user}) => {
         <div className='container mx-auto'>
             <h1 className="font-bold text-3xl">Meus repositórios Github</h1>
             <p>Github stats - public repos: {user.public_repos} / followers: {user.followers}</p>
+            <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href='/'>Home</a>
             {repos.map(repo => {
                 return (
                     <div key={repo.id} className='rounded bg-gray-200 mx-8 my-4 p-4 hover:shadow-md'>

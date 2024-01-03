@@ -7,6 +7,7 @@ const Index = ({user}) => {
             <h2 className="font-bold text-5xl">Olá! Eu sou Joir Neto</h2>
             <h2 className="font-bold text-3xl">Meu github</h2>
             <p>Github stats - public repos: {user.public_repos} / followers: {user.followers}</p>
+            <a className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href='/repositorios'>Repositórios</a>
         </div>
     )
 }
