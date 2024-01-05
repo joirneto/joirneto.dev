@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-    background: #d7d9e0;
+    background: #F3F4FB;
 }
 
 .bg-betwork {
-    background: url(/images/back-network.png) top right no-repeat;
+    background: #F3F4FB url(/images/back-network.png) top right no-repeat;
 }
