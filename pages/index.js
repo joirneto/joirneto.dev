@@ -1,7 +1,7 @@
 import React from 'react';
 import getUser from '../utils/getUser';
 import { RiGitRepositoryLine } from "react-icons/ri";
-import { HiUsers } from "react-icons/hi2";
+import { FiUsers } from "react-icons/fi";
 import PageHead from '../components/PageHead';
 import Hero from '../components/Hero';
 
@@ -32,7 +32,7 @@ const Index = ({ user, repos }) => {
             </div>
             <div>
                 <h3 className='text-orange lg:text-4xl text-3xl text-center font-bold uppercase mt-10'>Tech Contributions</h3>
-                <p className='text-center'>Github stats - <RiGitRepositoryLine className='inline-block' /> {user.public_repos} / <HiUsers className='inline-block' /> {user.followers}</p>
+                <p className='text-center'>Github stats - <RiGitRepositoryLine className='inline-block' /> {user.public_repos} / <FiUsers className='inline-block' /> {user.followers}</p>
                 <div className='lg:grid lg:grid-cols-3 lg:gap-2 lg:my-6'>
                     {repos.map(repo => {
                         return (
