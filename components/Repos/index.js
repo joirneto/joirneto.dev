@@ -8,7 +8,9 @@ const Repos = ({repos, user}) => {
             <UserStats user={user} />
             <div className='lg:grid lg:grid-cols-3 lg:gap-2 lg:my-6'>
                 {repos.map(repo => {
-                    <Repo key={repo.id} repo={repo}/>
+                    return (
+                        <Repo key={repo.id} repo={repo}/>
+                    )
                 })}
             </div>
         </div>
