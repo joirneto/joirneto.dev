@@ -1,5 +1,4 @@
 import React from 'react';
-import getUser from '../utils/getUser';
 import PageHead from '../components/PageHead';
 import Hero from '../components/Hero';
 import Summary from '../components/Summary';
@@ -21,7 +20,9 @@ const Index = ({ user, repos }) => {
 }
 
 export async function getServerSideProps(context) {
-    const { user, repos } = await getUser('joirneto');
+    const API_URL = process.env.API_URL;
+    const request = await fetch(`${API_URL}/api/getUser`);
+    const { user, repos } = await request.json();
     return {
         props: {
             user,
