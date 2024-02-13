@@ -4,8 +4,6 @@
 
 Este projeto é o código-fonte do curriculo online de Joir Neto, disponível em: https://joirneto-dev.vercel.app/
 
-![Preview](https://github.com/joirneto/joirneto.dev/blob/public/resume.png?raw=true)
-
 ![Preview](https://github.com/joirneto/joirneto.dev/blob/main/resume.png?raw=true)
 
 ## Início
